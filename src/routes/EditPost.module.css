@@ -26,7 +26,8 @@
 .actions {
   display: flex;
   justify-content: flex-end;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .actions button {
@@ -49,4 +50,14 @@
 
 .actions button[type='button']:hover {
   color: #d1bee6;
+}
+
+.actions a{
+  color: #28262c;
+  text-decoration-line: none;
+}
+
+.actions a:hover{
+  color: #d1bee6;
+  text-decoration-line: none;
 }

@@ -9,6 +9,9 @@
   margin-top: 25px;
 }
 
+.post a{
+  text-decoration: none;
+}
 
 .name {
   font-size: 0.8rem;

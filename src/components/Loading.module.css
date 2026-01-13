@@ -1,0 +1,10 @@
+.loading{
+    display: flex-col;
+    align-items: center;
+}
+
+.loading p {
+    text-shadow: black;
+    color: azure;
+    font-size: x-large;
+}
