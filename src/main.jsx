@@ -2,10 +2,24 @@ import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Text from './Text.jsx'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import NewPost from './components/NewPost.jsx'
+import RootLayout from './routes/RootLayout.jsx'
+
+const router = createBrowserRouter([
+  { 
+    path: '/', 
+    element: <RootLayout/>, 
+    children:[
+      { path: '/', element: <App />},
+      { path: '/create-post', element: <NewPost />}
+    ],
+  },
+]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </StrictMode>,
 )

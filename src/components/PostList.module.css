@@ -20,6 +20,16 @@
     justify-content: center;
 }
 
+.loading{
+    text-align: center;
+    font-size: large;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+}
+
 .emptyMessage {
     text-align: center;
 }

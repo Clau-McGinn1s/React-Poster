@@ -17,7 +17,6 @@ function App() {
   return (
     <main>
       <>
-        <MainHeader onCreatePost = {showModal}/>  
         <PostList 
           onClickBg = {closeModal} 
           showModal = {modalIsVisible} 
