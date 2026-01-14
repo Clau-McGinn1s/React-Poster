@@ -7,7 +7,7 @@ function RootLayout(){
     return(
         <>
             < Suspense fallback={<Loading/>} >
-                <MainHeader/>
+                <MainHeader/>    
                 <Outlet />
             </Suspense>
         </>

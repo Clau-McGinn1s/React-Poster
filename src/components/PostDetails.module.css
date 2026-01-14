@@ -22,3 +22,20 @@
 .details a {
   text-decoration: none;
 }
+
+.buttonGroup {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ gap: 12px;      
+}
+
+.buttonGroup .button {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+
+.buttonGroup .button::hover{
+    color: pink
+}

@@ -1,4 +1,6 @@
-import { useLoaderData, Link } from 'react-router-dom';
+import { useLoaderData, Link, Form } from 'react-router-dom';
+import { HiPencilSquare } from "react-icons/hi2";
+import { IoTrashBinSharp } from "react-icons/io5";
 
 import Modal from '../components/Modal';
 import classes from './PostDetails.module.css';
@@ -26,6 +28,13 @@ function PostDetails() {
       <main className={classes.details}>
         <p className={classes.author}>{post.name}</p>
         <p className={classes.text}>{post.content}</p>
+        <div className={classes.buttonGroup}>
+            <Link to={"/post/" + post.id + "/edit"}><HiPencilSquare size={25}/></Link>
+            <Form method='post'>
+                <input type="hidden" name="id" value={post.id}/>
+                <button className={classes.button}><IoTrashBinSharp size={25}/></button>
+            </Form>
+        </div>
       </main>
     </Modal>
   );

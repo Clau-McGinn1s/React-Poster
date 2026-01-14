@@ -10,6 +10,7 @@ export async function action({request}){
     } catch (error) {
         console.log(error.response.data);
     }
-
     return redirect('/');
 }
+
+
